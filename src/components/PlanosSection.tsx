@@ -6,9 +6,9 @@ const PlanosSection = () => {
   const planos = [
     {
       nome: "PLANO ESSENCIAL",
-      preco: "R$ 299",
-      periodo: "/mês",
-      precoAnual: "R$ 3.564/ano (R$ 297/mês)",
+      preco: "R$ 297",
+      periodo: "/mês (Plano Anual)",
+      precoAnual: "R$ 399/mês)",
       popular: false,
       recursos: [
         "Atendente Humanizado 24h/dia",

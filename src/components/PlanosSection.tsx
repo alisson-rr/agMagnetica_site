@@ -9,7 +9,6 @@ const PlanosSection = () => {
       nome: "PLANO ESSENCIAL",
       preco: "R$ 299",
       periodo: "/mês",
-      precoAnual: "R$ 3.564/ano (R$ 297/mês)",
       popular: false,
       recursos: [
         "Atendente Humanizado 24h/dia",
@@ -22,8 +21,7 @@ const PlanosSection = () => {
     {
       nome: "PLANO PREMIUM",
       preco: "R$ 467",
-      periodo: "/mês (Plano Anual)",
-      precoMensal: "R$ 599/mês (Mensal)",
+      periodo: "/mês",
       popular: true,
       recursos: [
         "Tudo do Plano Essencial",
@@ -100,16 +98,6 @@ const PlanosSection = () => {
                   <div className="text-muted-foreground text-sm">
                     {plano.periodo}
                   </div>
-                  {plano.precoAnual && (
-                    <div className="text-xs text-green-600 mt-2 font-medium">
-                      ou {plano.precoAnual}
-                    </div>
-                  )}
-                  {plano.precoMensal && (
-                    <div className="text-xs text-muted-foreground mt-1">
-                      {plano.precoMensal}
-                    </div>
-                  )}
                 </div>
                 
                 <ul className="space-y-3 mb-6 text-left">
